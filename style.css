@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(#21143f, #3b2863, #162b4d);
+}
+
+nav {
+    background-color: #17112d;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav h2 {
+    color: #f5c542;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f5c542;
+}
+
+.titulo {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.titulo h1 {
+    font-size: 45px;
+    color: #f5c542;
+}
+
+.titulo p {
+    margin-top: 10px;
+}
+
+.filmes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #29204a;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    border: 2px solid #57477d;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card img:hover {
+    opacity: 0.8;
+}
+
+.card h3 {
+    margin: 10px;
+    color: #f5c542;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card a {
+    background-color: #6b4ca5;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #f5c542;
+    color: #21143f;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+section > h2 {
+    text-align: center;
+    color: #f5c542;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.caixa h3 {
+    color: #3b2863;
+    margin-bottom: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 220px;
+    margin-top: 15px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+}
+
+.elenco {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.personagem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.elenco-card {
+    background-color: white;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.elenco-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.elenco-card img:hover {
+    opacity: 0.8;
+}
+
+.elenco-card h3 {
+    color: #3b2863;
+    margin: 8px;
+}
+
+.elenco-card p {
+    font-size: 14px;
+}
+
+.ator {
+    background-color: white;
+    width: 140px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ator h3 {
+    color: #3b2863;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ator img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+
+.ator img:hover {
+    opacity: 0.8;
+}
+
+.ator p {
+    font-size: 14px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.imagem-card {
+    background-color: white;
+    width: 220px;
+    height: 340px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagem-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 7px;
+}
+
+.imagem-card img:hover {
+    opacity: 0.8;
+}
+
+.curiosidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.curiosidade-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #f5c542;
+}
+
+.curiosidade-card:hover {
+    transform: translateY(-3px);
+}
+
+.curiosidade-card h3 {
+    color: #3b2863;
+    margin-bottom: 10px;
+}
+
+.curiosidade-card p {
+    line-height: 1.5;
+}
+
+.contato-card {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.formulario h3 {
+    color: #3b2863;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #3b2863;
+    color: white;
+}
+
+button:hover {
+    background-color: #f5c542;
+    color: #21143f;
+}
+
+footer {
+    background-color: #17112d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 35px;
+    }
+
+    .caixa {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .personagem {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .curiosidades {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-card {
+        width: 100%;
+    }
+
+    .galeria {
+        gap: 10px;
+    }
+
+    .imagem-card {
+        width: 45%;
+        height: 300px;
+    }
+}
